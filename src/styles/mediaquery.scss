@@ -1,0 +1,36 @@
+@media (max-width: 710px) {
+    .login {
+      padding: 0;
+    }
+
+    .header{
+
+      display: flex;
+      flex-direction: column;
+      // flex-direction: column;
+      > div {
+        h2 {
+          text-transform: uppercase;
+          color: wheat;
+          font-size: xx-large;
+          font-weight: 700;
+        }
+      }
+      >article {
+        
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+      
+        >a{
+          float:left; 
+          @include styledText;
+          @include myButton;
+        }
+      }
+    }
+    .todo{
+      display: flex;
+      flex-direction: column;
+      }
+  }
