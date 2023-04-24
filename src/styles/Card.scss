@@ -8,38 +8,76 @@
     flex-direction: row;
     gap: 3px;
   }
+
   .ViewBookClass {
+   
+display: flex;
+    flex-direction: column;
+
+  }
+  .Cards{
+     margin-top: 2px;
     display: flex;
     flex-wrap: wrap;
+    // flex-direction: column;
     justify-content: space-evenly;
-    
+    gap: 10px;
+    background-color: 1px solid black;
+
   }
+
   
   .BooksChild {
-    width: calc(25% - 10px);
+    width: calc(25% - 5px);
+  
     margin: 20px 0 0;
   }
   
   .card-avatar,
   .ant-card-actions {
-    background-color: #d6c7c7;
+    background-color: #282222;;
   }
   .card-avatar {
     height: 200px;
+    width: 300px;
+  }
+
+  .cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
   
+  .search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    color: transparent;
+    // position: fixed;
+    // top: 0;
+    // left: 50%;
+    // transform: translateX(-50%);
+    // z-index: 1;
+    // background-color: #fff;
+    // width: 80%;
+
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
+
   
   
   //adding media queries
   
   @media (max-width: 1200px) {
-    .exchangesChild {
+    .BooksChild {
       width: calc(50% - 20px);
     }
   }
   
   @media (max-width: 825px) {
-    .exchangesChild {
+    .BooksChild {
       width: calc(100% - 20px);
     }
   }

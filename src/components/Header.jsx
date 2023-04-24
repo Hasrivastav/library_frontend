@@ -7,7 +7,8 @@ import axios from 'axios';
 const Header = () => {
 
   const {isAuthenticated,setIsAuthenticated,loading,setLoading} =   useContext(Context);
-  const logoutHandler = async  (e)=>{
+ 
+  const logoutHandler = async(e)=>{
   setLoading(true);
 try{
 await axios.get(`${server}/users/logout`,
@@ -18,6 +19,7 @@ await axios.get(`${server}/users/logout`,
     );
     toast.success("Logged Out Successfully")
     setIsAuthenticated(false);
+
     setLoading(false)
 } catch(error){
     toast.error(error.respose.data.message)
@@ -30,12 +32,12 @@ await axios.get(`${server}/users/logout`,
   return (
     <nav className='header'>
        <div>
-        <h2>TODO APP</h2>
+        <h2>LIBRARY APP</h2>
        </div>
        
        <article >
-        <Link to={"/"}>Home</Link>
-        <Link to={"/viewBooks"}>ViewBooks</Link> 
+        <Link to={"/"}>Add Book</Link>
+        <Link  to={"/viewBooks"}>ViewBooks</Link> 
         {
           isAuthenticated?  <button disabled={loading} onClick={logoutHandler} className='btn'>Logout</button> :  <Link to={"/login"}>Login</Link>  
         }
