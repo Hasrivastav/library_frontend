@@ -7,7 +7,7 @@ import {createContext} from "react"
 
 
 
-export const server = "https://library-backend-fwpd.onrender.com/api/v1"
+export const server = "https://library-backends.onrender.com/api/v1"
 
 export const Context = createContext({isAuthenticated:false});
 

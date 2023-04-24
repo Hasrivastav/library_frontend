@@ -14,7 +14,7 @@ const Register = () => {
 const onsubmithandler = async  (e)=>{
     e.preventDefault();
 try{
-    const{ data } =await axios.post("https://library-backend-fwpd.onrender.com/api/v1/users/new",
+    const{ data } =await axios.post("https://library-backends.onrender.com/api/v1/users/new",
     {
         name,email,password,        
     },{

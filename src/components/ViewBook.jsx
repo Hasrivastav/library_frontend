@@ -24,7 +24,7 @@ const ViewBook = () => {
     const fetchExchanges = async () => {
       try {
         const { data } = await axios.get(
-          "https://library-backend-fwpd.onrender.com/api/v1/task/showAll",
+          "https://library-backends.onrender.com/api/v1/task/showAll",
           {
             withCredentials: true,
           }

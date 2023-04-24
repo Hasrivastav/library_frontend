@@ -7,7 +7,7 @@ import Register from './components/Register';
 import ViewBook from './components/ViewBook';
 
 
-// import './styles/App.scss';
+import './styles/App.scss';
 import { useContext } from 'react';
 import { Context } from './index';
 
