@@ -33,7 +33,7 @@ try{
 }
 
 }
-if(isAuthenticated) return <Navigate to="/" />
+if(isAuthenticated) return <Navigate to="/viewBooks" />
   return (
 <div className='login'>
     <section>
